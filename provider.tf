@@ -13,6 +13,6 @@ provider "openstack" {
   tenant_name = "admin"
   user_name   = "admin"
   password    = "test123"
-  auth_url    = "http://211.183.3.10:5000"  # 인증 URL
+  auth_url    = "http://<공인 IP>:5000"  # 인증 URL
   region      = "RegionOne"
 }
