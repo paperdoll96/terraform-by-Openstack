@@ -1,0 +1,14 @@
+---
+- name: httpd installation
+  hosts: all
+  become: true
+
+  tasks:
+    - name: httpd install
+      dnf:
+        name: httpd
+        state: present
+    - name: start httpd
+      service:
+        name: httpd
+        state: started
